@@ -6,10 +6,14 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
+    "plugins": [
+      [
+        "expo-notifications"  ]
+    ],
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/images/splash2.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#005091"
     },
     "assetBundlePatterns": [
       "**/*"
@@ -18,13 +22,25 @@
       "supportsTablet": true
     },
     "android": {
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyAsjKM16fbsmVRNU4jlrhn3yinTyu3z5JU"
+        }
+      },
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.bcodestech.smfirstapp",
+      "googleServicesFile": "./google-services.json"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "bd4ef670-53b0-44f7-8f70-b186f608f328"
+      }
     }
   }
 }
