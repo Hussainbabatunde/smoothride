@@ -896,6 +896,74 @@ const handleOntrip = async () => {
                   </TouchableOpacity>
                 </View>
               ) : (
+                
+                <View
+                // key = {driver.id}
+                // value = {driver.id}
+                style={{
+                  marginTop: 20,
+                  shadowOffset: {
+                    width: 0,
+                    height: 1,
+                  },
+                  shadowOpacity: 0.22,
+                  shadowRadius: 2.22,
+                  shadowColor: "gray",
+                  elevation: 3,
+                  backgroundColor: "white",
+                  borderRadius: 10,
+                  width: "100%",
+                }}
+              >
+                <View
+                  style={{
+                    backgroundColor: "white",
+                    borderTopLeftRadius: 15,
+                    borderTopRightRadius: 20,
+                  }}
+                >
+                  <Text
+                    style={{
+                      color: "#007CC2",
+                      textAlign: "center",
+                      fontSize: 20,
+                      marginTop: 25,
+                    }}
+                  >
+                    Hi, {username}
+                  </Text>
+                  <TouchableOpacity
+                    style={{
+                      backgroundColor: "#EDEDED",
+                      padding: 1,
+                      width: "90%",
+                      marginLeft: "5%",
+                      borderRadius: 7,
+                      marginTop: 20,
+                    }}
+                  >
+                    {/* {
+                                         this.state.isrequestingdrivers == true &&
+                                         <Text style={styles.driverbtn}>Getting available drivers....</Text>
+                                     } */}
+                    {/* {
+                                         this.state.isrequestingdrivers == false && */}
+                    <Text
+                      style={{
+                        marginStart: 5,
+                        color: "#000",
+                        fontSize: 20,
+                        alignSelf: "center",
+                        // fontFamily:'Roboto-Regular',1
+                        color: "#C1C1C1",
+                      }}
+                    >
+                      {" "}
+                      {number} driver(s) available
+                    </Text>
+                    {/* } */}
+                  </TouchableOpacity>
+
                 <FlatList
                   data={knowdata}
                   refreshControl={
@@ -905,128 +973,66 @@ const handleOntrip = async () => {
                   renderItem={({ item }) => {
                     return (
                       
-                        <View
-                          // key = {driver.id}
-                          // value = {driver.id}
-                          style={{
-                            marginTop: 20,
-                            shadowOffset: {
-                              width: 0,
-                              height: 1,
-                            },
-                            shadowOpacity: 0.22,
-                            shadowRadius: 2.22,
-                            shadowColor: "gray",
-                            elevation: 3,
-                            backgroundColor: "white",
-                            borderRadius: 10,
-                            width: "100%",
-                          }}
-                        >
-                          <View
+                      <View
+                      // key = {driver.id}
+                      // value = {driver.id}
+                      style={{
+                        marginTop: 20,
+                        shadowOffset: {
+                          width: 0,
+                          height: 1,
+                        },
+                        shadowOpacity: 0.22,
+                        shadowRadius: 2.22,
+                        shadowColor: "gray",
+                        elevation: 3,
+                        backgroundColor: "white",
+                        borderRadius: 10,
+                        width: "90%",
+                        marginLeft: "5%",
+                      }}
+                    >
+                      <View
+                        style={{
+                          flexDirection: "row",
+                          borderBottomWidth: 1,
+                          borderBottomColor: "#EDEDED",
+                          flexDirection: "row",
+                          alignItems: "center",
+                        }}
+                      >
+                        <View style={{ width: "15%", marginStart: 10 }}>
+                          <Image
+                            source={clientimg}
                             style={{
-                              backgroundColor: "white",
-                              borderTopLeftRadius: 15,
-                              borderTopRightRadius: 20,
+                              width: 50,
+                              height: 50,
+                              borderRadius: 20,
+                              alignSelf: "center",
+                              margin: 5,
+                            }}
+                          />
+                        </View>
+                        <View style={{ width: "60%", marginLeft: 5 }}>
+                          <Text
+                            style={{
+                              fontSize: 17,
+                              marginTop: 10,
+                              color: "#877A80",
+                              fontWeight: "400",
                             }}
                           >
-                            <Text
-                              style={{
-                                color: "#007CC2",
-                                textAlign: "center",
-                                fontSize: 20,
-                                marginTop: 25,
-                              }}
-                            >
-                              Hi, {username}
-                            </Text>
-                            <TouchableOpacity
-                              style={{
-                                backgroundColor: "#EDEDED",
-                                padding: 1,
-                                width: "90%",
-                                marginLeft: "5%",
-                                borderRadius: 7,
-                                marginTop: 20,
-                              }}
-                            >
-                              {/* {
-                                                   this.state.isrequestingdrivers == true &&
-                                                   <Text style={styles.driverbtn}>Getting available drivers....</Text>
-                                               } */}
-                              {/* {
-                                                   this.state.isrequestingdrivers == false && */}
-                              <Text
-                                style={{
-                                  marginStart: 5,
-                                  color: "#000",
-                                  fontSize: 20,
-                                  alignSelf: "center",
-                                  // fontFamily:'Roboto-Regular',1
-                                  color: "#C1C1C1",
-                                }}
-                              >
-                                {" "}
-                                {number} driver(s) available
-                              </Text>
-                              {/* } */}
-                            </TouchableOpacity>
-                            <View
-                              // key = {driver.id}
-                              // value = {driver.id}
-                              style={{
-                                marginTop: 20,
-                                shadowOffset: {
-                                  width: 0,
-                                  height: 1,
-                                },
-                                shadowOpacity: 0.22,
-                                shadowRadius: 2.22,
-                                shadowColor: "gray",
-                                elevation: 3,
-                                backgroundColor: "white",
-                                borderRadius: 10,
-                                width: "90%",
-                                marginLeft: "5%",
-                              }}
-                            >
-                              <View
-                                style={{
-                                  flexDirection: "row",
-                                  borderBottomWidth: 1,
-                                  borderBottomColor: "#EDEDED",
-                                  flexDirection: "row",
-                                  alignItems: "center",
-                                }}
-                              >
-                                <View style={{ width: "15%", marginStart: 10 }}>
-                                  <Image
-                                    source={clientimg}
-                                    style={{
-                                      width: 50,
-                                      height: 50,
-                                      borderRadius: 20,
-                                      alignSelf: "center",
-                                      margin: 5,
-                                    }}
-                                  />
-                                </View>
-                                <View style={{ width: "60%", marginLeft: 5 }}>
-                                  <Text
-                                    style={{
-                                      fontSize: 17,
-                                      marginTop: 10,
-                                      color: "#877A80",
-                                      fontWeight: "400",
-                                    }}
-                                  >
-                                    {" "}
-                                    {item?.name}{" "}
-                                  </Text>
-                                </View>
-                              </View>
-                            </View>
-                            <TouchableOpacity
+                            {" "}
+                            {item?.name}{" "}
+                          </Text>
+                        </View>
+                      </View>
+                    </View>
+                        
+                    );
+                  }}
+                />
+                <TouchableOpacity
                               style={{
                                 marginTop: 7,
                                 backgroundColor: "#005091",
@@ -1059,10 +1065,6 @@ const handleOntrip = async () => {
                             </TouchableOpacity>
                           </View>
                         </View>
-                        
-                    );
-                  }}
-                />
 
                 
               )}

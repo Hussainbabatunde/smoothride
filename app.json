@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "sm-firstapp",
+    "name": "smoothride",
     "slug": "sm-firstapp",
-    "version": "2.2.0",
+    "version": "4.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -23,7 +23,9 @@
       "supportsTablet": true
     },
     "android": {
-      "permission":["com.google.android.gms.permission.AD_ID"],
+      "permission": [
+        "com.google.android.gms.permission.AD_ID"
+      ],
       "config": {
         "googleMaps": {
           "apiKey": "AIzaSyAsjKM16fbsmVRNU4jlrhn3yinTyu3z5JU"
@@ -34,7 +36,7 @@
         "backgroundColor": "#ffffff"
       },
       "package": "com.bcodestech.smfirstapp",
-      "versionCode": 3,
+      "versionCode": 5,
       "googleServicesFile": "./google-services.json"
     },
     "web": {
