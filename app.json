@@ -2,7 +2,7 @@
   "expo": {
     "name": "smoothride",
     "slug": "sm-firstapp",
-    "version": "2.1.0",
+    "version": "4.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -36,7 +36,7 @@
         "backgroundColor": "#ffffff"
       },
       "package": "com.bcodestech.smfirstapp",
-      "versionCode": 3,
+      "versionCode": 5,
       "googleServicesFile": "./google-services.json"
     },
     "web": {
