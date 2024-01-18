@@ -107,7 +107,7 @@ const Driver = () => {
     (state) => state.LoginSlice
   );
 
-  console.log({ thengame: data?.user.pushToken });
+  // console.log({ thengame: data });
   const { First_Trip_start_time } = useSelector(
     (state) => state.FristTripSlice
   );

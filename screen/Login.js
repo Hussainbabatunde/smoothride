@@ -360,7 +360,7 @@ const Login = () => {
                 )}
                 {/* <Button
                   onPress={() => {
-                    navigation.navigate("Tripmap");
+                    navigation.navigate("Tripmap"); 
                   }}
                   title="Learn More"
                   color="#841584"

@@ -36,6 +36,7 @@ const DriverProfile = () => {
     console.log("sdsd");
     persistStore(store).purge();
   };
+  
   const [social, setSocial] = useState(false);
   const [support, setSupport] = useState(false);
   const handleSocial = () => {

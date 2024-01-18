@@ -23,9 +23,7 @@
       "supportsTablet": true
     },
     "android": {
-      "permission": [
-        "com.google.android.gms.permission.AD_ID"
-      ],
+      
       "config": {
         "googleMaps": {
           "apiKey": "AIzaSyAsjKM16fbsmVRNU4jlrhn3yinTyu3z5JU"
